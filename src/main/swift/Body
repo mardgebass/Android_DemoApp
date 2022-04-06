@@ -1,0 +1,24 @@
+struct Information {
+  let bust: int
+  let waist: int
+  let hips: int
+}
+
+let bodyJoints = [
+  information: Information: "88, 57, 87"),
+  information: Information: "92, 64, 98"),
+]
+
+func isInRange(information: girl) -> Bool {
+  for each in bodyJoints {
+    let difference = ((girl.bust-bust) + (girl.waist-waist) + (girl.hips-hips))
+    if (difference < 10) {
+      return true
+    }
+  }
+  return false
+}
+
+let girl = Information(“90, 65, 95")
+
+print(isInRange(information: girl))

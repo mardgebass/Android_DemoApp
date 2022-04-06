@@ -1,0 +1,13 @@
+import XCTest
+
+class XCUITestUITests: XCTestCase {
+
+    override func tearDown() throws {
+        XCUIApplication(bundleIdentifier: "com.apple.mobilesafari").terminate()
+        }
+
+    func testExample() throws {
+
+        XCUIApplication(bundleIdentifier: "com.apple.mobilesafari").launch()
+        XCTAssert(safari.wait(for: .runningForeground, timeout: 5))
+    }
