@@ -3,12 +3,15 @@ package ru.gb.locators;
 import ru.gb.locators.Android.AndroidDragPageLocators;
 import ru.gb.locators.Android.AndroidLoginPageLocators;
 import ru.gb.locators.Android.AndroidMainPageLocators;
+import ru.gb.locators.Android.AndroidSwipePageLocators;
 import ru.gb.locators.IOS.iOSDragPageLocators;
 import ru.gb.locators.IOS.iOSLoginPageLocators;
 import ru.gb.locators.IOS.iOSMainPageLocators;
+import ru.gb.locators.IOS.iOSSwipePageLocators;
 import ru.gb.locators.Interfaces.DragPageLocators;
 import ru.gb.locators.Interfaces.LoginPageLocators;
 import ru.gb.locators.Interfaces.MainPageLocators;
+import ru.gb.locators.Interfaces.SwipePageLocators;
 
 public class LocatorService {
 
@@ -22,4 +25,6 @@ public class LocatorService {
             .equals("Android") ? new AndroidDragPageLocators() : new iOSDragPageLocators();
 
 
+    public static final SwipePageLocators SWIPE_PAGE_LOCATORS = System.getProperty("platform")
+            .equals("Android") ? new AndroidSwipePageLocators() : new iOSSwipePageLocators();
 }

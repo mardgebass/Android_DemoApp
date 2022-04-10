@@ -18,5 +18,10 @@ public class iOSMainPageLocators implements MainPageLocators {
     public By dragButton() {
         return null;
     }
+
+    @Override
+    public By swipeButton() {
+        return null;
+    }
 }
 

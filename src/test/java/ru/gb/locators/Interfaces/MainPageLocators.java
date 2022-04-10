@@ -7,6 +7,7 @@ public interface MainPageLocators {
     By loginButton();
     By homeScreen();
     By dragButton();
+    By swipeButton();
 
 }
 

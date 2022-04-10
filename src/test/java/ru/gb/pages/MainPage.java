@@ -25,6 +25,12 @@ public class MainPage {
         return new LoginPage();
     }
 
+    @Step("Кликаем по кнопке логина в меню и переходим на экран логина")
+    public SwipePage clickSwipeMenuButton() {
+        $(locator().swipeButton()).click();
+        return new SwipePage();
+    }
+
     @Step("Делаем скриншот главного экрана и сравниваем с требованием")
     public MainPage checkScreenshot() {
 

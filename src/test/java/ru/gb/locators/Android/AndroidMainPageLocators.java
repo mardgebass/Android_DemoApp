@@ -21,5 +21,10 @@ public class AndroidMainPageLocators implements MainPageLocators {
         return MobileBy.xpath("//android.widget.Button[@content-desc=\"Drag\"]/android.widget.TextView");
     }
 
+    @Override
+    public By swipeButton() {
+        return By.xpath("//android.widget.Button[@content-desc=\"Swipe\"]/android.widget.TextView[2]");
+    }
+
 }
 
