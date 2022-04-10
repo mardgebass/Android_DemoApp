@@ -34,26 +34,12 @@ public class BaseTest {
 
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
-        switch (System.getProperty("platform")) {
-            case "Android":
                 capabilities.setCapability("platformName", "Android");
                 capabilities.setCapability("deviceName", "Pixel");
                 capabilities.setCapability("platformVersion", "10");
                 capabilities.setCapability("udid", "emulator-5554");
                 capabilities.setCapability("automationName", "UiAutomator2");
                 capabilities.setCapability("app", "D:/GB_study/apk/Android-NativeDemoApp-0.2.1.apk");
-                break;
-
-            case "iOS":
-                // устанавливаем capabilities.
-                capabilities.setCapability("platformName", "iOS");
-                capabilities.setCapability("deviceName", "iPhone");
-                capabilities.setCapability("platformVersion", "15");
-                capabilities.setCapability("udid", "2E20F3A4-ACC1-4799-A4F5-83358E56AB2E");
-                capabilities.setCapability("automationName", "XCUITest");
-                capabilities.setCapability("app", "D:/GB_study/iOS-Simulator-NativeDemoApp-0.2.1.app");
-                break;
-        }
 
         // папка для сохранения скриншотов selenide
         Configuration.reportsFolder = "screenshots/actual";
