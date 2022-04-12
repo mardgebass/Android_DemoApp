@@ -16,6 +16,7 @@ public class BaseTest {
     // метод, который будет открывать наше приложение на телефоне
     public MainPage openApp() {
         WebDriver driver = null;
+
         try {
             driver = getDriver();
         } catch (MalformedURLException e) {

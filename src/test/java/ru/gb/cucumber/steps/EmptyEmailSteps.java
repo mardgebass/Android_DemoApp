@@ -12,19 +12,16 @@ public class EmptyEmailSteps extends BaseTest {
 
     @Given("User is on Login page")
     public void user_is_on_login_page() {
-        loginPage = openApp().clickLoginMenuButton();
-        throw new io.cucumber.java.PendingException();
+        loginPage = openApp().clickLoginMenuButton();;
     }
 
     @When("User click login button")
     public void user_click_login_button() {
         loginPage.clickLoginButton();
-        throw new io.cucumber.java.PendingException();
     }
 
     @Then("User should see error message {string}")
     public void user_should_see_error_message(String string) {
         loginPage.checkLoginErrorText("Please enter a valid email address");
-        throw new io.cucumber.java.PendingException();
     }
 }

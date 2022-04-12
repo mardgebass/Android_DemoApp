@@ -16,4 +16,4 @@ public class EmptyEmailTest extends BaseTest {
                 .checkLoginErrorText("Please enter a valid email address");
     }
 
-    }
+}

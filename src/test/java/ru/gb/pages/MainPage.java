@@ -25,7 +25,7 @@ public class MainPage {
         return new LoginPage();
     }
 
-    @Step("Кликаем по кнопке логина в меню и переходим на экран логина")
+    @Step("Кликаем по кнопке свайп в меню")
     public SwipePage clickSwipeMenuButton() {
         $(locator().swipeButton()).click();
         return new SwipePage();
