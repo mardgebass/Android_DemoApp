@@ -4,6 +4,9 @@ stages:
 tags:
   - new_runner
 
+only:
+  - master
+
 test_job:
   stage: test
   script:
