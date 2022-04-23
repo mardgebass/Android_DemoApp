@@ -1,6 +1,9 @@
 stages:
   - test
 
+tags:
+  - new_runner
+
 test_job:
   stage: test
   script:
