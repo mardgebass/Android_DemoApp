@@ -1,14 +1,12 @@
 stages:
   - test
 
-tags:
-  - new_runner_GB
-
-only:
-  - master
-
 test_job:
   stage: test
+  tags:
+    - new_runner_GB
+  only:
+    - master
   script:
     - echo "Запускает тесты"
     - mvn clean
