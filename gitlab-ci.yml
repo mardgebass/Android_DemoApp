@@ -1,0 +1,13 @@
+stages:
+  - test
+
+test_job:
+  stage: test
+  script:
+    - echo "Запускает тесты"
+    - mvn clean
+    - mvn test
+  artifacts:
+    when: always
+    paths:
+      - allure-results
