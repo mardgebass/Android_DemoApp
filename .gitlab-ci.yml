@@ -2,7 +2,7 @@ stages:
   - test
 
 tags:
-  - new_runner
+  - new_runner_GB
 
 only:
   - master
