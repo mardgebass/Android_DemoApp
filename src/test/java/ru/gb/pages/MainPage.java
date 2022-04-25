@@ -51,5 +51,11 @@ public class MainPage {
         $(locator().dragButton()).click();
         return new DragPage();
     }
+
+    @Step("Кликаем по кнопке свайп в меню")
+    public SwipePage clickSwipeMenuButton() {
+        $(locator().swipeButton()).click();
+        return new SwipePage();
+    }
 }
 

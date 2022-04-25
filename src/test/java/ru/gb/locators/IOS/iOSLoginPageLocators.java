@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import ru.gb.locators.Interfaces.LoginPageLocators;
 
 public class iOSLoginPageLocators implements LoginPageLocators {
+
     @Override
     public By loginButton() {
         return null;
@@ -11,7 +12,7 @@ public class iOSLoginPageLocators implements LoginPageLocators {
 
     @Override
     public By loginErrorText() {
-        return  null;
+        return null;
     }
 
     @Override
@@ -49,4 +50,3 @@ public class iOSLoginPageLocators implements LoginPageLocators {
         return null;
     }
 }
-
